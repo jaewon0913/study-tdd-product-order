@@ -1,5 +1,9 @@
 package com.example.studytddproductorder.product;
 
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+@Component
 class ProductService {
     private final ProductPort productPort;
 
