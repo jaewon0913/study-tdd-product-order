@@ -1,6 +1,7 @@
 package com.example.studytddproductorder.product;
 
 import com.example.studytddproductorder.ApiTest;
+import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
@@ -22,13 +23,20 @@ public class ProductApiTest extends ApiTest {
         assertThat(response.statusCode()).isEqualTo(HttpStatus.CREATED.value());
     }
 
-    private ExtractableResponse<Response> 상품등록요청(AddProductRequest request) {
-        return productSteps.상품등록요청(request);
+    @Test
+    void 상품조회() {
+        ProductSteps.상품등록요청(ProductSteps.상품등록요청_생성());
+
+        Long productId = 1L;
+
+        final ExtractableResponse<Response> response = RestAssured.given().log().all()
+                .when()
+                .get("/products/{productId}", productId)
+                .then().log().all()
+                .extract();
+
+        assertThat(response.statusCode()).isEqualTo(HttpStatus.OK.value());
+
+        assertThat(response.jsonPath().getString("name")).isEqualTo("상품명");
     }
-
-    private AddProductRequest 상품등록요청_생셩() {
-
-        return productSteps.상품등록요청_생성();
-    }
-
 }

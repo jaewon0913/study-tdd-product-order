@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @SpringBootTest
-public class ProductServiceTest {
+public class ProductServiceTest_Section2 {
 
     @Autowired
     private ProductService productService;
@@ -19,10 +19,10 @@ public class ProductServiceTest {
         final long productId = 1L;
 
         //  상품 조회
-        final GetProductResponse response = productService.getProduct(productId);
+        //final GetProductResponse response = productService.getProduct(productId);
 
         //  상품 응답 검증
-        assertThat(response).isNotNull();
+        //assertThat(response).isNotNull();
 
     }
 
