@@ -1,6 +1,6 @@
 package com.example.studytddproductorder.product.application.service;
 
-import com.example.studytddproductorder.product.ProductPort;
+import com.example.studytddproductorder.product.application.port.ProductPort;
 import com.example.studytddproductorder.product.domain.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

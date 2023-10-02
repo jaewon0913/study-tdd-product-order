@@ -1,6 +1,7 @@
 package com.example.studytddproductorder.order;
 
 import com.example.studytddproductorder.ApiTest;
+import com.example.studytddproductorder.order.domain.CreateOrderRequest;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;

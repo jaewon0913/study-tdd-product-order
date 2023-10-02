@@ -1,6 +1,6 @@
 package com.example.studytddproductorder.payment.domain;
 
-import com.example.studytddproductorder.order.Order;
+import com.example.studytddproductorder.order.domain.Order;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

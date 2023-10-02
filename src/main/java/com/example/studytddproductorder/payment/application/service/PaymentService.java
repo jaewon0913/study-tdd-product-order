@@ -1,6 +1,6 @@
 package com.example.studytddproductorder.payment.application.service;
 
-import com.example.studytddproductorder.order.Order;
+import com.example.studytddproductorder.order.domain.Order;
 import com.example.studytddproductorder.payment.application.port.PaymentPort;
 import com.example.studytddproductorder.payment.domain.Payment;
 import com.example.studytddproductorder.payment.domain.PaymentRequest;
