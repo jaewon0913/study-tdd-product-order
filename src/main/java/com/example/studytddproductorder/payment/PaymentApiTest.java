@@ -19,6 +19,6 @@ public class PaymentApiTest extends ApiTest {
 
          final var response = PaymentSteps.주문결제요청(request);
 
-         assertThat(response.statusCode()).isEqualTo(HttpStatus.OK.value());
+         AssertionsForClassTypes.assertThat(response.statusCode()).isEqualTo(HttpStatus.OK.value());
      }
 }
