@@ -1,7 +1,9 @@
 package com.example.studytddproductorder.payment;
 
 import com.example.studytddproductorder.order.Order;
+import org.springframework.stereotype.Component;
 
+@Component
 class PaymentService {
     private final PaymentPort paymentPort;
 
