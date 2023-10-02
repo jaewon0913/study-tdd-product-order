@@ -2,7 +2,7 @@ package com.example.studytddproductorder.payment;
 
 import com.example.studytddproductorder.order.OrderService;
 import com.example.studytddproductorder.order.OrderSteps;
-import com.example.studytddproductorder.product.ProductService;
+import com.example.studytddproductorder.product.application.service.ProductService;
 import com.example.studytddproductorder.product.ProductSteps;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

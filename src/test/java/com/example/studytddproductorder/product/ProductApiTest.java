@@ -1,6 +1,7 @@
 package com.example.studytddproductorder.product;
 
 import com.example.studytddproductorder.ApiTest;
+import com.example.studytddproductorder.product.adapter.ProductRepository;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;

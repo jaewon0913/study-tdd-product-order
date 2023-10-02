@@ -1,5 +1,6 @@
-package com.example.studytddproductorder.product;
+package com.example.studytddproductorder.product.application.service;
 
+import com.example.studytddproductorder.product.domain.DiscountPolicy;
 import org.springframework.util.Assert;
 
 record GetProductResponse(

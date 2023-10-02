@@ -1,4 +1,4 @@
-package com.example.studytddproductorder.product;
+package com.example.studytddproductorder.product.domain;
 
 import lombok.AccessLevel;
 import lombok.Getter;

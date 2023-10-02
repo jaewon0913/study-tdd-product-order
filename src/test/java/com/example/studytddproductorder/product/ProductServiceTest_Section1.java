@@ -1,5 +1,8 @@
 package com.example.studytddproductorder.product;
 
+import com.example.studytddproductorder.product.application.service.AddProductRequest;
+import com.example.studytddproductorder.product.application.service.ProductService;
+import com.example.studytddproductorder.product.domain.DiscountPolicy;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

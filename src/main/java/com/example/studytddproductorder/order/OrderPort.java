@@ -1,7 +1,6 @@
 package com.example.studytddproductorder.order;
 
-import com.example.studytddproductorder.product.Product;
-import org.springframework.stereotype.Component;
+import com.example.studytddproductorder.product.domain.Product;
 
 interface OrderPort {
     Product getProductById(final Long productId);

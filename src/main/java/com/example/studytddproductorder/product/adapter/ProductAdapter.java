@@ -1,5 +1,7 @@
-package com.example.studytddproductorder.product;
+package com.example.studytddproductorder.product.adapter;
 
+import com.example.studytddproductorder.product.application.port.ProductPort;
+import com.example.studytddproductorder.product.domain.Product;
 import org.springframework.stereotype.Component;
 
 @Component
