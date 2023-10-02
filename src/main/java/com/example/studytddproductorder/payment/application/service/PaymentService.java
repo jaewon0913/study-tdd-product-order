@@ -1,6 +1,9 @@
-package com.example.studytddproductorder.payment;
+package com.example.studytddproductorder.payment.application.service;
 
 import com.example.studytddproductorder.order.Order;
+import com.example.studytddproductorder.payment.application.port.PaymentPort;
+import com.example.studytddproductorder.payment.domain.Payment;
+import com.example.studytddproductorder.payment.domain.PaymentRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/payments")
-class PaymentService {
+public class PaymentService {
     private final PaymentPort paymentPort;
 
     PaymentService(PaymentPort paymentPort) {

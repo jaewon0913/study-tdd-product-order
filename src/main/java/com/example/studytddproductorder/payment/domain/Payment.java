@@ -1,4 +1,4 @@
-package com.example.studytddproductorder.payment;
+package com.example.studytddproductorder.payment.domain;
 
 import com.example.studytddproductorder.order.Order;
 import lombok.AccessLevel;
@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Table(name = "payments")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-class Payment {
+public class Payment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,7 +23,7 @@ class Payment {
 
     private String cardNumber;
 
-    Payment(Order order, String cardNumber) {
+    public Payment(Order order, String cardNumber) {
         Assert.notNull(order, "주문은는 필수입니다.");
         Assert.hasText(cardNumber, "카드 번호는 필수입니다.");
         this.order = order;

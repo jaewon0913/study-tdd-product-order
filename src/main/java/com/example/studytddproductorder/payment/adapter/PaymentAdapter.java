@@ -1,7 +1,9 @@
-package com.example.studytddproductorder.payment;
+package com.example.studytddproductorder.payment.adapter;
 
 import com.example.studytddproductorder.order.Order;
 import com.example.studytddproductorder.order.OrderRepository;
+import com.example.studytddproductorder.payment.application.port.PaymentPort;
+import com.example.studytddproductorder.payment.domain.Payment;
 import org.springframework.stereotype.Component;
 
 @Component
